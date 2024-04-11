@@ -2,9 +2,105 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>TKB</title>
+  <style>
+    body {
+      font-family: Arial;
+      color: #1e135f;
+    }
+    .container {
+      margin: 0 auto;
+      max-width: 70%;
+    }
+    h1 {
+      text-align: center;
+      color: darkblue;
+    }
+    .section {
+      display: flex;
+      color: blue;
+    }
+    .left-column {
+      flex: 1;
+    }
+    .right-column {
+      flex: 1;
+      text-align: right;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      border: 1px solid black;
+    }
+    th {
+      background: sandybrown;
+    }
+    th.weekday {
+      background: yellow;
+    }
+    th.weekday1 {
+      background: white;
+    }
+  </style>
 </head>
 <body>
-$END$
+<div class="container">
+  <h1>Thời Khóa Biểu</h1>
+  <div class="section">
+    <div class="left-column">
+      <a>Lớp: T0908I</a>
+      <br>
+      <a>Giáo viên: KhoaNV</a>
+      <br>
+      <a>Phòng học: Class3/Lab3</a>
+    </div>
+    <div class="right-column">
+      <a>Thời gian học: 13h30 - 17h30</a>
+      <br>
+      <a>Ngày học: Thứ 3, 5, 7</a>
+    </div>
+  </div>
+  <table>
+    <tr>
+      <th class="weekday1" colspan="3" ></th>
+      <th class="weekday">Thứ 3</th>
+      <th class="weekday">Thứ 5</th>
+      <th class="weekday">Thứ 7</th>
+    </tr>
+    <tr>
+      <th class="week">Tuần</th>
+      <th class="week">Ngày bắt đầu</th>
+      <th class="week">Ngày kết thúc</th>
+      <th class="week" colspan="3">Môn học</th>
+    </tr>
+    <tr>
+      <td align="center">01</td>
+      <td>01/09/2009</td>
+      <td>05/09/2009</td>
+      <td>CF - T1, L1</td>
+      <td>CF - T2, L2</td>
+      <td>CF - T3, L3</td>
+    </tr>
+    <tr>
+      <td align="center">02</td>
+      <td>08/09/2009</td>
+      <td>12/09/2009</td>
+      <td>CF - T4, L4</td>
+      <td>CF - Written Test</td>
+      <td>C - T1, L1</td>
+    </tr>
+    <tr>
+      <td align="center">...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </table>
+</div>
 </body>
 </html>
