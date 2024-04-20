@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check 3 Cạnh TGiac</title>
+</head>
+<style>
+    body {
+        margin-top: 10%;
+        text-align: center;
+    }
+</style>
+<body>
+<h1> Kiểm tra xem có phải 3 cạnh tam giác không</h1>
+<p> Nhập thông số cạnh:</p><br>
+<p> Nhập cạnh 1:</p><br>
+<input type="number" id="canh_1" placeholder="nhap canh 1"> <br>
+<p> Nhập cạnh 2:</p><br>
+<input type="number" id="canh_2" placeholder="nhap canh 2">
+<p> Nhập cạnh 3:</p><br>
+<input type="number" id="canh_3" placeholder="nhap canh 3"><br><br>
+<button onclick="kiemtratamgiac()"> Kiểm Tra</button><br>
+<p id="ket_qua_tam_giac"></p><br>
+<script>
+    function kiemtratamgiac() {
+        let canh1 = +document.getElementById("canh_1").value;
+        let canh2 = +document.getElementById("canh_2").value;
+        let canh3 = +document.getElementById("canh_3").value;
+        let canh123= canh1+canh2-canh3;
+        let canh231= canh2+canh3-canh1;
+        let canh132= canh1+canh3-canh2;
+        if(canh1 && canh2 && canh3 && (canh1+canh2)>canh3 && (canh1+canh3)>canh2 &&(canh2+canh3)>canh1){
+            document.getElementById("ket_qua_tam_giac").innerHTML="Là 1 tam giác"
+        }else{
+            document.getElementById("ket_qua_tam_giac").innerHTML="Không phải 1 tam giác"
+        }
+    }
+</script>
+</body>
+</html>

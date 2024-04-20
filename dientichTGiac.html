@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>S TGiac</title>
+</head>
+<style>
+  body {
+    margin-top: 10%;
+    text-align: center;
+  }
+</style>
+
+<body>
+<h1>Tính diện tích tam giác vuông với 2 cạnh kề</h1>
+<input type="number" id="a" placeholder="Nhập cạnh kề a (m): ">
+<input type="number" id="b" placeholder="Nhập cạnh kề b (m): ">
+<button onclick="xuatkq()">Kết quả</button>
+<p id="kq"></p>
+</body>
+
+<script>
+  function xuatkq(){
+    let a =+document.getElementById('a').value;
+    let b =+document.getElementById('b').value;
+    let c = 0.5*a*b;
+    document.getElementById('kq').innerHTML=' Diện tích tam giác là: '+ c +' (m)';
+  }
+</script>
+</html>

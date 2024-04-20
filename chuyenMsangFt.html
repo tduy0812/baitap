@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Met -> Feet</title>
+</head>
+<style>
+    body {
+        margin-top: 10%;
+        text-align: center;
+    }
+</style>
+
+<body>
+<h1>Chuyển Met sang Feet</h1>
+<input type="number" id="a" placeholder="Nhập giá trị (m): ">
+<button onclick="xuatkq()">Kết quả</button>
+<p id="kq"></p>
+</body>
+
+<script>
+    function xuatkq(){
+        let a =+document.getElementById('a').value;
+        let c = a*3.2808;
+        document.getElementById('kq').innerHTML= +a+ " m bằng "+ c +" feet";
+    }
+</script>
+</html>

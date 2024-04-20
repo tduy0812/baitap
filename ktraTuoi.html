@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tuổi</title>
+</head>
+<style>
+    body {
+        margin-top: 10%;
+        text-align: center;
+    }
+</style>
+<body>
+<h1> Kiểm tra xem có phải tuổi của 1 người không</h1>
+<h3> Nhập tuổi:</h3><br>
+<input type="number" id="tuoi_nguoi" placeholder="nhap tuoi"><br><br>
+<button onclick="tuoinguoi()"> Kiểm tra</button>
+<p id="thong_tin"></p>
+<script>
+    function tuoinguoi() {
+        let tuoi= +document.getElementById("tuoi_nguoi").value;
+        if( tuoi<0 ||tuoi>120){
+            document.getElementById("thong_tin").innerHTML="#ERROR#";
+        }else {
+            document.getElementById("thong_tin").innerHTML="tuoi nguoi hop le"
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>S Vuông</title>
+</head>
+<style>
+    body {
+        margin-top: 10%;
+        text-align: center;
+    }
+</style>
+
+<body>
+<h1>Tính diện tích hình vuông</h1>
+<input type="number" id="a" placeholder="Nhập cạnh hình vuông(m): ">
+<button onclick="xuatkq()">Kết quả</button>
+<p id="kq"></p>
+</body>
+
+<script>
+    function xuatkq(){
+        let a =+document.getElementById('a').value;
+        let c = a*a;
+        document.getElementById('kq').innerHTML=' Diện tích hình vuông là: '+ c +' (m)';
+    }
+</script>
+</html>
